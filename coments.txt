@@ -8,4 +8,20 @@ npx create-react-app my-app
 שם הפרוייקט שאנו רוצים לקרוא לו
 מריצים באמצעות npm start
 ונפתחת האפליקציה הראשונה של ריאקט בדפדפן
-היי
+
+כשמוסיפים קומפוננטה חדשה בקובץ נפרד
+בכדי ליצא את הקומפוננטה תריך לכתוב לפני הפונקציה
+export default
+
+export default function Greeting() {
+return <span> שלום עולם </span>
+}
+כדי שנוכל להשתמש בה באמצעות
+import
+
+לשים את 
+import React from 'react';
+בכל קובץ קומפוננטה
+
+וככה נוסיף כל קומפוננטה בקובץ הראשי
+import Greeting from './Greeting';
