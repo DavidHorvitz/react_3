@@ -42,3 +42,5 @@ import myVar from './../components/Vars.js';
 
 ככה מייבאים את כל המשתנים מהקובץ
 import * as myImportedObject from './Vars'
+המילה class
+לא תעבוד ב JSX
