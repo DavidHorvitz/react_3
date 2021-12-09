@@ -10,7 +10,7 @@ npx create-react-app my-app
 ונפתחת האפליקציה הראשונה של ריאקט בדפדפן
 
 כשמוסיפים קומפוננטה חדשה בקובץ נפרד
-בכדי ליצא את הקומפוננטה תריך לכתוב לפני הפונקציה
+בכדי ליצא את הקומפוננטה צריך לכתוב לפני הפונקציה
 export default
 
 export default function Greeting() {
@@ -25,3 +25,20 @@ import React from 'react';
 
 וככה נוסיף כל קומפוננטה בקובץ הראשי
 import Greeting from './Greeting';
+
+יבוא מתת ספריות
+src/
+├── components/
+│ └── MyVar.js
+└── application/
+└── App.js
+
+import myVar from './../components/Vars.js';
+הבה נראה את המסע:
+חלק א' – ./ אנו מתחילים מהמיקום שלנו.
+חלק ב' – ../ עולים תיקייה אחת ל- src .
+חלק ג' – יורדים אל תיקיית components .
+חלק ד' – קובץ MyVar.js
+
+ככה מייבאים את כל המשתנים מהקובץ
+import * as myImportedObject from './Vars'
